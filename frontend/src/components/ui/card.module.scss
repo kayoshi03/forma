@@ -1,0 +1,70 @@
+@use "@/config/__var" as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-16;
+    grid-column-start: span 3;
+    background-color: $background-color;
+    padding: $padding-16;
+    border-radius: 5px;
+    box-shadow: -2 2 5 1 $accent-color;
+    &__title {
+        font-size: $fz-14;
+    }
+    &__description {
+        font-size: $fz-14;
+    }
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $gap-8;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: $gap-8;
+    }
+    &__price {
+        margin-left: 5px;
+        font-size: $fz-24;
+        font-weight: 900;
+        color: $price-color;
+    }
+    &__category {
+        width: max-content;
+        padding: $padding-12;
+        font-size: $fz-14;
+        border-radius: 100px;
+        color: $accent-color;
+        background-color: $text-color;
+    }
+    &__image {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+    }
+    &__button {
+        margin-top: auto;
+        width: 100%;
+        border-radius: 5px;
+        background-color: $text-color;
+        color: $accent-color;
+        font-size: $fz-16;
+        padding: $padding-16;
+        cursor: pointer;
+    }
+    &__rating {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: $gap-8;
+        p{
+            font-size: $fz-14;
+            font-weight: 600;
+            color: $text-color;
+        }
+    }
+}

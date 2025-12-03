@@ -1,0 +1,19 @@
+@use "@/config/__var" as *;
+
+.header {
+    background-color: $background-color;
+    width: 100%;
+    box-shadow: 0 0 10 1 $second-color;
+    padding: 16px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__static {
+        display: flex;
+        align-items: center;
+        gap: $gap-32;
+    }
+}
+

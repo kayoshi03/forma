@@ -1,0 +1,8 @@
+@use "@/config/__var" as *;
+
+.logotype {
+    width: max-content;
+    font-size: $fz-24;
+    color: $second-color;
+    font-weight: 900;
+}

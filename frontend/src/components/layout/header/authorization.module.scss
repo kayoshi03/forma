@@ -1,0 +1,6 @@
+@use "@/config/__var" as *;
+
+.auth {
+    display: flex;
+    gap: $gap-16;
+}

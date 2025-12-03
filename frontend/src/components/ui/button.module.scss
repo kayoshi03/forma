@@ -1,0 +1,12 @@
+@use "@/config/__var" as *;
+
+.button {
+    background-color: $second-color;
+    color: $accent-color;
+    padding: $padding-16;
+    border-radius: 2px;
+    font-size: $fz-14;
+    &:hover {
+        cursor: pointer;
+    }
+}
